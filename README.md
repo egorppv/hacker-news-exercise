@@ -6,6 +6,11 @@ It includes two executable console applications:
 
 Additionally, the repository contains HackerNewsAPIClients, which provides client implementations for parsing Hacker News and potentially other external sources.
 
+To launch the example:
+1. Open the solution.
+2. Launch HackerNewsAPI project
+3. Launch HackerNewsAPIClientExample project and it will connect to the API on 5000 port
+
 
 The HackerNewsAPI application is composed of two main components:
 - A BackgroundService that periodically polls the target website at a configured interval.
@@ -22,3 +27,4 @@ Concerns:
 - Downloaded items are stored twice: in the download cache and in the result cache. This can be optimized by using a single cache that stores stories in an ordered form, simplifying both reading and storage.
 - A HealthCheck endpoint could provide information about potential download issues.
 - There is a delay based on the configured UpdateInterval for the background job, meaning the data is not real-time but is optimized for high-intensity read scenarios.
+
