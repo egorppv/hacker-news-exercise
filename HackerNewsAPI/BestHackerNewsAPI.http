@@ -1,0 +1,7 @@
+﻿@host = http://localhost:5000
+
+### Get top N best stories
+# Replace 10 with the number of stories you want
+GET {{host}}/api/BestStories/10
+Accept: application/json
+
